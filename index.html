@@ -1,24 +1,24 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS.
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
-humandate: "FIXME"    # human-readable date (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable time (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # use YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # use YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: "FIXME"      # contact email address for workshop organizer, such as "grace@hopper.org"
-etherpad:         # optional (insert the URL for your Etherpad if you're using one)
+venue: "University of Arkansas"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "1 University of Arkansas, Fayetteville, AR 72701"      # street address of workshop (e.g., "123 Forth Street, Blimingen, Euphoria")
+country: "us"      # country (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # language (lowercase two-letter ISO code such as "fr" - see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "36.062913,-94.1682237"       # fractional latitude and longitude (e.g., "41.7901128,-87.6007318"; you can use http://www.latlong.net/)
+humandate: "July 6-7, 2017"    # human-readable date (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am - 5:00 pm"    # human-readable time (e.g., "9:00 am - 4:30 pm")
+startdate: 2017-07-06      # use YYYY-MM-DD format like 2015-01-01
+enddate: 2017-07-07        # use YYYY-MM-DD format like 2015-01-02
+instructor: ["Jason Williams", "John Fonner"] # list of names like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: []     # list of names like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: "williams@cshl.edu"      # contact email address for workshop organizer, such as "grace@hopper.org"
+etherpad: http://pad.software-carpentry.org/2017-07-06-uniarkansas         # optional (insert the URL for your Etherpad if you're using one)
 eventbrite:       # optional (insert the alphanumeric key for Eventbrite registration, e.g., "1234567890AB")
-day1_am: "Data organization in spreadsheets and OpenRefine"
-day1_pm: "Introduction to R"
-day2_am: "Data analysis and visualization in R"
-day2_pm: "SQL for data management"
+day1_am: "Data analysis and visualization in R"
+day1_pm: "Data analysis and visualization in R"
+day2_am: "Cloud computing and command line for genomics"
+day2_pm: "Cloud computing and command line for genomics"
 ---
 <!--
   HEADER
@@ -55,13 +55,13 @@ day2_pm: "SQL for data management"
   the pitch.
 -->
 <p>
-<a href=http://datacarpentry.org>Data Carpentry</a> workshops are for any researcher 
-who has data they want to analyze, and no prior computational experience is required. 
-This hands-on workshop teaches basic concepts, skills and tools for working more 
-effectively with data. 
+<a href=http://datacarpentry.org>Data Carpentry</a> workshops are for any researcher
+who has data they want to analyze, and no prior computational experience is required.
+This hands-on workshop teaches basic concepts, skills and tools for working more
+effectively with data.
 </p>
 <p>
-We will cover {{page.day1_am}}, {{page.day1_pm}}, {{page.day2_am}} and {{page.day2_pm}}.
+We will cover {{page.day1_am}} and {{page.day2_am}}.
 
 Participants should bring their laptops and plan to participate actively. By the end of the workshop learners should be able to more effectively manage and analyze data and be able to apply the tools and approaches directly to their ongoing research.
 </p>
@@ -102,12 +102,11 @@ Participants should bring their laptops and plan to participate actively. By the
   Modify the block below if there are any special requirements.
 -->
 <p>
-  <strong>Requirements:</strong> Participants must bring a laptop with a 
-  Mac, Linux, or Windows operating sytem (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. They should have a few specific software packages installed (listed
+  <strong>Requirements:</strong> Participants must bring a laptop with
+  a few specific software packages installed (listed
   <a href="#setup">below</a>). They are also required to abide by
   Data Carpentry's
-  <a href="{{site.dc_site}}/code-of-conduct/">Code of Conduct</a>.
+  <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
 </p>
 
 <!--
@@ -125,7 +124,9 @@ Participants should bring their laptops and plan to participate actively. By the
   {% else %}
     <a href='mailto:{{site.contact}}'>{{site.contact}}</a>
   {% endif %}
-  for more information.
+  for more information. Registration is directly through CyVerse at
+<a href="http://www.cyverse.org/blog/events/cyverse-tools-and-services-data-carpentry-workshop-langebio-cinvestav-irapuato-mx-may-30">http://www.cyverse.org/blog/events/cyverse-tools-and-services-data-carpentry-workshop-langebio-cinvestav-irapuato-mx-may-30</a>
+
 </p>
 
 <hr/>
@@ -136,17 +137,33 @@ Participants should bring their laptops and plan to participate actively. By the
   Show the workshop's schedule.  Edit the items and times in the table
   to match your plans.  You may also want to change 'Day 1' and 'Day
   2' to be actual dates or days of the week.
--->
+
 <h2>Preliminary Schedule</h2>
-
-<!-- DO NOT EDIT SURVEY LINKS -->
-<p><em>Surveys</em></p>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href='{{ site.dc_pre_survey }}'>Pre-workshop Survey</a></p>
-<p><a href='{{ site.dc_post_survey }}'>Post-workshop Survey</a></p>
-
-
-
+<p>
+<h3>Day I focus: Data Carpentry with Linux</h3>
+<br>Description: Using an example dataset from genomics, we will cover the absolute basic skills you need to succeed at common computational biology tasks.
+<p>
+Topics:
+<ul>
+<li>Navigating the unix shell/filesystem
+<li>Working on remote (cloud) computing resources
+<li>Managing data transfers
+<li>Using command-line bioinformatics tools
+<li>Automating tasks
+<li>Building pipelines.
+</ul>
+<p>
+<h3>Day II focus: Data Carpentry with R</h3>
+<br>Description: Building on day I, we will work with examples across diverse computational biology areas   (e.g. genomics, neuroscience, health records, etc.).  A beginner’s introduction to the R language will cover the basics needed to organize, clean, analyze, and visualize spreadsheets and tabular data.
+<p>
+Topics:
+<ul>
+<li>Organizing computational projects and metadata in spreadsheets
+<li>Data cleaning with OpenRefine
+<li>Intro to R
+<li>Data visualization in R
+</ul>
+<!--
 <div class="row">
   <div class="col-md-6">
 
@@ -155,14 +172,219 @@ Participants should bring their laptops and plan to participate actively. By the
       <tr> <td>Morning</td>  <td>{{page.day1_am}}</td> </tr>
        <tr> <td>Afternoon</td>  <td>{{page.day1_pm}}</td> </tr>
     </table>
- 
- 
+
+
     <h3>Day 2</h3>
     <table class="table table-striped">
       <tr> <td>Morning</td>  <td>{{page.day2_am}}</td> </tr>
       <tr> <td>Afternoon</td>  <td>{{page.day2_pm}}</td> </tr>
     </table>
  </div>
+</div>
+-->
+<p>
+  <h3><font color="red"><strong> Pre-Survey:</strong></font> Please take this <a href="https://www.surveymonkey.com/r/dc_pre_workshop_v1">pre-survey</a> prior to the workshop.</h3>
+</p>
+<p>
+<h2>Schedule</h2>
+</p>
+<div class="row">
+  <div class="col-md-6">
+    <h3>Day 1: 9AM - 4:30PM</h3>
+    <table class="table table-striped">
+            <tr>
+        <td colspan=2 style="background:gainsboro"><strong>Morning:</strong> Intro, Data Processing, and Organization</td>
+      </tr>
+      <tr>
+          <td>
+              <a href="DataCarpentry_Intro.pdf">Intro to Data Carpentry</a>
+          </td>
+          <td>
+           Jason
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/datadescription-genomics/">Intro to the Data Set</a>
+          </td>
+          <td>
+           Jason
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/tidiness-genomics/">Genomics Data Tidyness</a>
+          </td>
+          <td>
+           John
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/cloud-genomics/">Connecting to the Cloud in 5 Minutes or Less</a>
+          </td>
+          <td>
+           John
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/r-genomics-2/00-intro-to-r-rstudio.html">R and R Studio Orientation</a>
+          </td>
+          <td>
+           Jason
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/r-genomics-2/01-intro-to-r.html">Intro to R and R Studio</a>
+          </td>
+          <td>
+           Jason
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/r-genomics-2/02-intro-to-dataframes-metadata-r.html">Dataframes and Metadata</a>
+          </td>
+          <td>
+           John
+          </td>
+       <tr>
+        <td colspan=2 style="background:gainsboro"><strong>Afternoon:</strong> Data Cleaning and Visualization in R - Intro to Linux </td>
+      </tr>
+      <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/r-genomics-2/03-dataframes-contd-r.html">Dataframes Continued</a>
+          </td>
+          <td>
+           Selene
+          </td>
+      </tr>
+      </tr>
+      <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/r-genomics-2/04-intro-to-dplyr-r.html">Data Cleaning and Manipulation with dplyr</a>
+          </td>
+          <td>
+           Rubén
+          </td>
+      <tr>
+          <td>
+               <a href="https://jasonjwilliamsny.github.io/r-genomics-2/04-intro-to-dplyr-r.html">Data Clearning and Manipulation with dplyr (cont'd)</a>
+          </td>
+          <td>
+           Rubén
+          </td>
+      </tr>
+        <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/r-genomics-2/05-genomics-visualization-r.html">Plotting and Visualizing in R</a>
+          </td>
+          <td>
+           Jason
+          </td>
+      </tr>
+        <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/importingdata-genomics/">Data Importing and Uploading</a>
+          </td>
+          <td>
+           John
+          </td>
+      </tr>
+        <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/shell-genomics/">Intro to the Linux Shell - Filesystem and Navigation</a>
+          </td>
+          <td>
+           Jason
+          </td>
+      </tr>
+      <tr>
+    </table>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">
+    <h3>Day 2: 9AM - 4:30PM</h3>
+    <table class="table table-striped">
+            <tr>
+        <td colspan=2 style="background:gainsboro"><strong>Morning:</strong> Using Linux to organize and process Genomics Data</td>
+      </tr>
+        <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/shell-genomics/lessons/03_searching_files.html">Intro to the Linux Shell - Searching and Metadata</a>
+          </td>
+          <td>
+           Jason
+          </td>
+      </tr>
+        <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/organization-genomics/">Project Organziation and Documentation</a>
+          </td>
+          <td>
+           John
+          </td>
+      </tr>
+        <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/wrangling-genomics/00-readQC.html">'For' loops - QC of Sequencing Data</a>
+          </td>
+          <td>
+          Jason
+          </td>
+      </tr>
+        <tr>
+        <td colspan=2 style="background:gainsboro"><strong>Afternoon:</strong> Using Linux to Automate</td>
+      </tr>
+        <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/wrangling-genomics/01-automating_a_workflow.html">Automating Analyses - Shell Scripting</a>
+          </td>
+          <td>
+          Selene
+          </td>
+      </tr>
+        <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/wrangling-genomics/02-variant-calling-workflow.html">Creating Workflows - Varient Calling Workflow</a>
+          </td>
+          <td>
+           Selene
+          </td>
+      </tr>
+        <tr>
+          <td>
+              Workshop Conclusion
+          </td>
+          <td>
+           Please take the <a href="https://www.surveymonkey.com/r/dc_post_workshop_v1">post-survey</a>
+          </td>
+      </tr>
+
+    </table>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <h3>Post Workshop</h3>
+    <table class="table table-striped">
+            <tr>
+        <td colspan=2 style="background:gainsboro">How to Make This Work on Your Own</td>
+      </tr>
+      <tr>
+          <td>
+              <a href="https://jasonjwilliamsny.github.io/cloud-genomics/logging-onto-cloud.html">Launching Your Own Cloud Instances</a>
+          </td>
+          <td>
+          On Your Own
+          </td>
+      </tr>
+    </table>
+  </div>
 </div>
 
 <!--
@@ -177,6 +399,7 @@ Participants should bring their laptops and plan to participate actively. By the
   where 'YYYY-MM-DD-site' is the identifier for your workshop (e.g.,
   '2015-06-10-esu'.
 -->
+<br>
 {% if page.etherpad %}
 <p>
   <strong>Etherpad:</strong> <a href="{{page.etherpad}}">{{page.etherpad}}</a>.
@@ -298,10 +521,10 @@ Participants should bring their laptops and plan to participate actively. By the
 <h2 id="setup">Setup</h2>
 
 <p>
-To participate in a Data Carpentry workshop, you will need working copies of the 
-described software. Please make sure to install everything (or at least to download 
-the installers) before the start of your workshop. Participants should bring and use 
-their own laptops to insure the proper setup of tools for an efficient workflow 
+To participate in a Data Carpentry workshop, you will need working copies of the
+described software. Please make sure to install everything (or at least to download
+the installers) before the start of your workshop. Participants should bring and use
+their own laptops to insure the proper setup of tools for an efficient workflow
 once you leave the workshop.
 <p>
 Please follow these <a href=install.html>Setup Instructions</a>.
@@ -311,4 +534,3 @@ Please follow these <a href=install.html>Setup Instructions</a>.
   that may be useful on the
   <a href = "https://github.com/swcarpentry/workshop-template/wiki/Configuration-Problems-and-Solutions">Configuration Problems and Solutions wiki page</a>.
 </p>
-
